@@ -23,3 +23,8 @@ const createPassword = () => {
 
     passwordBox.value = password;
 }
+
+const copyPassword = () => {
+    passwordBox.select();
+    document.execCommand('copy')
+}
